@@ -1,8 +1,0 @@
-Origin: Gregor
-Label: Gregor's repo
-Suite: stable
-Version: 1.0
-Codename: gregors-repo
-Architectures: iphoneos-arm
-Components: main
-Description: Gregor's Cydia Repo
