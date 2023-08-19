@@ -12,6 +12,7 @@ footer {
   padding: 10px 10%;
 }
 
+/* all Text-elements */
 h1,
 h2,
 h3,
@@ -30,6 +31,7 @@ pre {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+/* Navbar */
 header {
   display: flex;
   background-color: #242424;
@@ -43,13 +45,13 @@ header {
 }
 
 .navbar-items a {
-  color: #f5f5fa;
+  color: #d4d4db;
   padding: 0px 16px;
   text-decoration: none;
 }
 
 .navbar-items a:hover {
-  color: #bebec9;
+  color: #95959d;
 }
 
 
