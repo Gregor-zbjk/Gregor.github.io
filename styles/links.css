@@ -1,26 +1,57 @@
-h1 {
-    color: black;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.bg-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: url(../images/desktop-wallpaper.jpg);
+  /* Add the blur effect */
+  -webkit-filter: blur(8px);
+  filter: blur(8px);
+
+  /* Full height */
+  width: 100vw;
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+@supports (backdrop-filter: blur(1px)) {
+    .bg-image {
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+    }
 }
 
 .links-picture {
-    width: 30vw !important;
-    clip-path: circle();
+  width: 30vw !important;
+  clip-path: circle();
 }
 
 .row {
-    display: flex !important;
-    flex-direction: column;
-    align-items: center;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .linkpage-button {
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 5vw;
+  margin: 16px 20px;
+  cursor: pointer;
 }
