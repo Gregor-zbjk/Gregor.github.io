@@ -1,2 +1,5 @@
+# Ignores file created by macOS
 .DS_Store
+
+# Ignores vscode's hint file
 .hintrc
