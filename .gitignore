@@ -1,5 +1,8 @@
 # Ignores file created by macOS
-.DS_Store
+/.DS_Store
 
 # Ignores vscode's hint file
-.hintrc
+/.hintrc
+
+# Ignores VScode foldder
+/.vscode/
