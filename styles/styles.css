@@ -34,13 +34,15 @@ pre {
 /* Navbar */
 .navbar {
   display: flex;
-  background-color: #242424;
+  background-color: #242424a8;
   justify-content: space-between;
   align-items: center;
   padding: 10px 10%;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0px 5px 13px 2px #858282;
+  width: 100vw;
+  position: fixed;
 }
 
 .navbar-logo {
@@ -60,12 +62,6 @@ pre {
 .row {
   display: flex;
   flex-wrap: wrap;
-}
-
-.side {
-  flex: 30%;
-  background-color: #e0e0e6;
-  padding: 20px;
 }
 
 /* main section */
