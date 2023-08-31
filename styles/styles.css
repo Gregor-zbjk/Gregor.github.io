@@ -15,13 +15,27 @@ footer {
 }
 
 /* all Text-elements */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat'
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.4rem;
+}
+h5 {
+  font-size: 1.2rem;
+}
+h6 {
+  font-size: 1rem;
 }
 
 a,
@@ -61,7 +75,6 @@ pre {
 
 .row {
   display: flex;
-  flex-wrap: wrap;
 }
 
 /* main section */
@@ -76,11 +89,9 @@ pre {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .container img {
-  justify-content: space-around;
   align-items: center;
 }
 
