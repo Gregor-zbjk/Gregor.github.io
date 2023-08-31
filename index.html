@@ -6,6 +6,9 @@
 
     <title>Gregor Zobjak Design</title>
 
+    <!-- Load external JavaScripts -->
+    <link rel="script" href="script.js" />
+
     <!-- Load external CSS Styles -->
     <link rel="stylesheet" href="styles/styles.css" />
 
@@ -13,110 +16,110 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
   </head>
 
   <body>
     <header class="navbar">
-      <a href="index.html" class="navbar-logo">
-        <img
-          src="https://placehold.co/50x50@3x?text=Logo&font=Raleway"
-          alt="Logo"
-          class="navigation_logo"
-        />
-      </a>
+      <a href="index.html" class="navbar-branding">Gregor Zobjak</a>
 
-      <nav class="navbar-items">
-        <a href="about-me.html">Über mich</a>
-        <a href="angebote.html">Angebote</a>
-        <a href="links.html">Links</a>
-        <a href="kontakt.html">Kontakt</a>
+      <nav>
+        <input type="checkbox" id="navbar-hamburger">
+        <label for="navbar-hamburger" class="navbar-hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+        <ul class="navbar-items">
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="about-me.html">Über mich</a></li>
+          <li><a href="angebote.html">Angebote</a></li>
+          <li><a href="links.html">Links</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
       </nav>
     </header>
 
-    <div class="row">
-      <div class="main">
-        <div class="container">
-          <h1>Heading 1</h1>
-          <h2>Heading 2</h2>
-          <h3>Heading 3</h3>
-          <h4>Heading 4</h4>
-          <h5>Heading 5</h5>
-          <h6>Heading 6</h6>
+    <div class="main">
+      <div class="container">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
 
-          <p>This is an paragraph</p>
+        <p>This is an paragraph</p>
 
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          </p>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+          takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
 
-          <img src="https://placehold.co/600x400@3x" alt="Placeholder" />
-          <br />
-          <a href="https://placehold.co/">Some link</a>
-        </div>
+        <img src="https://placehold.co/600x400@3x" alt="Placeholder" />
+        <br />
+        <a href="https://placehold.co/">Some link</a>
+      </div>
 
-        <div class="container">
-          <h1>Heading 1</h1>
-          <h2>Heading 2</h2>
-          <h3>Heading 3</h3>
-          <h4>Heading 4</h4>
-          <h5>Heading 5</h5>
-          <h6>Heading 6</h6>
+      <div class="container">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
 
-          <p>This is an paragraph</p>
+        <p>This is an paragraph</p>
 
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          </p>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+          takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
 
-          <img src="https://placehold.co/600x400@3x" alt="Placeholder" />
-          <br />
-          <a href="https://placehold.co/">Some link</a>
-        </div>
+        <img src="https://placehold.co/600x400@3x" alt="Placeholder" />
+        <br />
+        <a href="https://placehold.co/">Some link</a>
       </div>
     </div>
+
     <footer>
-      <div class="container">
-        <div class="sitemap">
-          <ul>
-            <li><a href="impressum.html">Impressum</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-            <li><a href="anegbote.html">Angebote</a></li>
-            <li><a href="links.html">links</a></li>
-          </ul>
-        </div>
+      <ul class="sitemap">
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="anegbote.html">Angebote</a></li>
+        <li><a href="links.html">links</a></li>
+      </ul>
 
-        <div class="social-media">
-          <a href="https://placehold.co/"
-            ><img src="https://placehold.co/50x50" alt="Instagram"
-          /></a>
-          <a href="https://placehold.co/"
-            ><img src="https://placehold.co/50x50" alt="Instagram"
-          /></a>
-          <a href="https://placehold.co/"
-            ><img src="https://placehold.co/50x50" alt="Instagram"
-          /></a>
-        </div>
+      <div class="social-media">
+        <a href="https://placehold.co/"
+          ><img src="https://placehold.co/50x50" alt="Instagram"
+        /></a>
+        <a href="https://placehold.co/"
+          ><img src="https://placehold.co/50x50" alt="Instagram"
+        /></a>
+        <a href="https://placehold.co/"
+          ><img src="https://placehold.co/50x50" alt="Instagram"
+        /></a>
+      </div>
 
-        <a>© Copyright by Gregor Zobjak</a>
+      <div id="footer-copyright">
+        <p>Copyright © Gregor Zobjak. Alle Rechte vorbehalten</p>
       </div>
     </footer>
   </body>
