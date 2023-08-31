@@ -4,6 +4,8 @@
   --accent-color: #0e4ee5;
   --textcolor-light: #f5f5fa;
   --textcolor-black: #000000;
+  --navbar-height: 4rem;
+  --background-blur: 10px;
 }
 
 * {
@@ -45,14 +47,15 @@ h6 {
     transparent 25%
   );
   padding: 0.5rem 5%;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(var(--background-blur));
+  backdrop-filter: blur(var(--background-blur));
   box-shadow: 0px 5px 13px 2px #858282;
   top: 0;
   right: 0;
   left: 0;
   position: fixed;
   z-index: 1;
+  max-height: var(--navbar-height);
 }
 
 .navbar-branding {
@@ -79,9 +82,53 @@ h6 {
   color: #98989d;
 }
 
+/* hamburger menu */
+
+nav input[type="checkbox"] {
+  display: none;
+}
+
+.navbar-hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.4rem;
+}
+
+.bar {
+  height: 0.3rem;
+  width: 2.2rem;
+  background-color: var(--textcolor-light);
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-hamburger {
+    display: flex;
+  }
+  .navbar-items {
+    display: none;
+    height: min-content;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: var(--navbar-height);
+    right: 0;
+    padding: 1rem;
+
+    background-color: color-mix(in srgb, var(--background-color), transparent 25%);
+    -webkit-backdrop-filter: blur(var(--background-blur));
+    backdrop-filter: blur(var(--background-blur));
+
+  }
+  #navbar-hamburger:checked ~ .navbar-items {
+    display: flex;
+  }
+}
+
 /* main section */
 .main {
-  margin-top: 5rem;
+  margin-top: 3rem;
   padding: 1rem;
   display: flex;
   flex-direction: column;
